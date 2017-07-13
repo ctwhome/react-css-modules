@@ -1,0 +1,64 @@
+/**
+ *  Degiro Assigment - 2017
+ * ------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+@value _black from './colors.css';
+
+:global(html) {
+    color: _black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*  Font types and Sizes (Google Material names */
+.mediumFont {
+    font-weight: 500;
+}
+
+.headlineFont {
+    font-size: 42px;
+}
+
+.titleFont {
+    font-size: 24px;
+    composes: mediumFont;
+}
+
+.titleFont {
+    font-size: 18px;
+    composes: mediumFont;
+}
+
+.subHeaderFont {
+    font-size: 16px;
+}
+
+.subHeader2Font {
+    font-size: 16px;
+    composes: mediumFont;
+}
+
+.bodyFont {
+    font-size: 14px;
+}
+
+.body2Font {
+    composes: bodyFont;
+    composes: mediumFont;
+}
+
+.captionFont {
+    font-size: 12px;
+}
+
+.caption2Font {
+    text-transform: uppercase;
+    composes: captionFont;
+    composes: mediumFont;
+}

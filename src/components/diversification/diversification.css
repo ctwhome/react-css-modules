@@ -1,0 +1,31 @@
+.diversification {
+}
+
+.percentage {
+    font-size: 32px;
+    left: 70px;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    width: 50px;
+}
+
+:global(path:hover) {
+    cursor: pointer;
+}
+
+.pie {
+    position: relative;
+}
+
+.diversification {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.active {
+    transform: scale(1.05);
+    transition: all ease 0.2s;
+}

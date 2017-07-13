@@ -1,0 +1,40 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 02/07/2017
+ *
+ */
+@value gridSize, doubleGridSize maxContentWidth, borderRadius, styledSelect from '../../globals.css';
+
+.detailsList {
+    margin: calc(gridSize * 5);
+}
+
+.detailsItem {
+    align-content: center;
+    display: flex;
+    line-height: 12px;
+    padding: gridSize;
+    width: 180px;
+}
+
+.box {
+    display: block;
+    height: 10px;
+    margin-right: gridSize;
+    width: 10px;
+}
+
+.value {
+    flex-grow: 1;
+    composes: subHeaderFont from "../../typography.css";
+}
+
+.percentage {
+    composes: subHeader2Font from "../../typography.css";
+}
+
+.percentage:after {
+    content: "%";
+}

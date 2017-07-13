@@ -1,0 +1,89 @@
+/**
+ *  Degiro Assigment - 2017
+ * ------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+
+@value maxContentWidth: 1200px;
+@value _greyLighter, _greyLight from './colors.css';
+
+/* Globals */
+:export {
+    /* Sizes */
+    maxContentWidth: 1200px;
+    gridSize: 8px;
+    doubleGridSize: 16px;
+    borderRadius: 3px;
+    borderStyle: solid 1px _greyLight;
+}
+
+/* Reset */
+:global(*) {
+    box-sizing: border-box;
+}
+
+:global(html, body) {
+    background: _greyLighter;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/* Flex framework */
+.layoutRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.layoutColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    flex-grow: 1;
+}
+
+._container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+._content {
+    display: flex;
+    max-width: maxContentWidth;
+    width: 100%;
+}
+
+.styledSelect {
+    background: url(https://image.flaticon.com/icons/png/512/60/60995.png) 95% 8px no-repeat;
+    background-size: 10px 10px;
+    border: 1px solid _greyLight;
+    border-radius: 3px;
+    height: 29px;
+    overflow: hidden;
+    width: 110px;
+}
+
+.styledSelect select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    width: 130px;
+}
+
+@media screen and (max-width: 600px) {
+    .hidePhone {
+        display: none;
+    }
+
+}

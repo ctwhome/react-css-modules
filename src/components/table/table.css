@@ -1,0 +1,65 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+
+@value _greyLight, _grey from '../colors.css';
+@value gridSize, doubleGridSize, layoutColumn, layoutRow from '../globals.css';
+@value headlineFont, subHeader2Font, captionFont, caption2Font, bodyFont, titleFont, mediumFont from "../typography.css";
+
+.table {
+}
+
+.row {
+    align-items: center;
+    border-top: 1px solid _greyLight;
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+}
+
+.date {
+    color: _grey;
+    margin-left: doubleGridSize;
+    padding-left: gridSize;
+    width: 100px;
+}
+
+.dateBlock {
+    margin-left: doubleGridSize;
+    padding-left: gridSize;
+    width: 100px;
+
+}
+
+.day {
+    color: _black;
+    composes: bodyFont;
+}
+
+.month {
+    color: _grey;
+    composes: captionFont;
+
+}
+
+.news {
+    overflow: hidden;
+    padding-right: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.news:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.icon {
+    margin-right: doubleGridSize;
+
+}

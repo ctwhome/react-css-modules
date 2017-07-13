@@ -1,0 +1,23 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+
+@value _greyLighter from './colors.css';
+
+/* Main content*/
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10%;
+}
+
+.main {
+    background: _greyLighter;
+    display: flex;
+    flex-direction: column;
+}

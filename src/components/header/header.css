@@ -1,0 +1,51 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+
+@value _blueDark, _white from '../colors.css';
+@value flex, layoutRow, gridSize, doubleGridSize from '../globals.css';
+
+.header {
+    background: _white;
+    padding: gridSize;
+    composes: _container from '../globals.css';
+}
+
+.headerContent {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    composes: _content from '../globals.css';
+}
+
+.logoContainer {
+    flex-grow: 1;
+}
+
+.block {
+    margin-right: calc(gridSize * 4);
+}
+
+.buttonsBlock {
+    composes: layoutRow;
+}
+
+.logo {
+    height: 40px;
+    width: 100px;
+}
+
+.searchSeparation {
+    max-width: 60px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .buttonsBlock {
+        display: none;
+    }
+}

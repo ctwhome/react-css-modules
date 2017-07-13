@@ -1,0 +1,23 @@
+/**
+ *  Degiro Assigment - 2017
+ * ------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+
+/* Colors */
+:export {
+    _black: #293D4A;
+
+    _grey: #9AA9B7;
+    _greyLight: #E6ECF2;
+    _greyLighter: #F2F5F8;
+
+    _blueLight: #89DCFF;
+    _blue: #009FDF;
+    _blueDark: #0071AD;
+    _white: #FFF;
+
+    _green: #2ECC71;
+}

@@ -1,0 +1,41 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+
+@value _black, _grey, _white, _greyLighter from '../colors.css';
+@value layoutRow, gridSize, doubleGridSize, borderRadius, borderStyle from '../globals.css';
+
+.search {
+    align-items: center;
+    background: _greyLighter;
+    border: borderStyle;
+    border-radius: borderRadius;
+    display: flex;
+    flex-direction: row;
+    margin-left: doubleGridSize;
+    max-width: 300px;
+    width: 100%;
+}
+
+.inputSearch {
+    background: url("./search.png") transparent 95% 8px no-repeat;
+    background-size: 20px 20px;
+    border: transparent;
+    color: _black;
+    flex-grow: 1;
+    padding: gridSize doubleGridSize;
+    composes: body2Font from "../typography.css";
+}
+
+.search svg {
+    padding: gridSize;
+    fill: _grey;
+}
+
+.search input::placeholder {
+    color: _grey;
+}

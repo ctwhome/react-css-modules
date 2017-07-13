@@ -1,0 +1,40 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+
+@value _white, _blue, _green, _greyLighter from '../colors.css';
+@value gridSize, doubleGridSize, borderRadius  from '../globals.css';
+
+.button {
+    border-radius: borderRadius;
+    padding: 13px;
+    transition: background-color ease 0.2s;
+    composes: body2Font from "../typography.css";
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.header:hover {
+    background-color: _greyLighter;
+}
+
+.rebalance {
+    background-color: _greyLighter;
+    color: _blue;
+    height: calc(gridSize * 5);
+    line-height: 7px;
+    composes: subHeader2Font from "../typography.css";
+}
+
+.deposit {
+    background: _green;
+    height: calc(gridSize * 5);
+    line-height: 13px;
+    composes: subHeader2Font from "../typography.css";
+}

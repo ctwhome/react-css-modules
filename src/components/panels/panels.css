@@ -1,0 +1,22 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+@value gridSize from '../globals.css';
+
+.panels {
+    composes: _container from '../globals.css';
+}
+
+.panelsContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: calc(gridSize * -9);
+    max-width: 1300px;
+    width: 100%;
+}

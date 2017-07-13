@@ -1,0 +1,69 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+
+@value _blue, _blueLight, _white from '../colors.css';
+@value hidePhone, gridSize, doubleGridSize, flex, layoutColumn, layoutRow from '../globals.css';
+@value headlineFont, subHeader2Font, caption2Font, titleFont from "../typography.css";
+
+.info {
+    background: _blue;
+    color: _white;
+    composes: _container from '../globals.css';
+}
+
+.infoContent {
+    box-sizing: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: calc(gridSize * 9);
+    padding-top: calc(gridSize * 5);
+    width: 100%;
+    composes: _content from '../globals.css';
+}
+
+.paddingLeftBlock {
+    padding-left: calc(gridSize * 5);
+}
+
+.buttons > div {
+    text-align: center;
+    width: 126px;
+}
+
+.buttons > div:last-child {
+    margin-left: doubleGridSize;
+}
+
+.lightText {
+    color: _blueLight;
+}
+
+.rate svg {
+    height: 30px;
+    width: 30px;
+}
+
+.rate svg:last-child {
+    color: _blueLight;
+}
+
+.details {
+    flex-wrap: wrap;
+}
+
+.details > div {
+    margin: calc(gridSize * 4);
+}
+
+.details > div:first-child {
+    margin-left: 0;
+}
+
+.subtitle {
+    margin-top: gridSize;
+}

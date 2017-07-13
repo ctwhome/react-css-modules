@@ -1,0 +1,70 @@
+/**
+ *  Degiro Assignment - 2017
+ * -------------------------
+ * https://github.com/ctwhome/dashboard
+ * @author Jesus Garcia <ctw@ctwhome.com> 30/06/2017
+ *
+ */
+@value _blueDark, _blue, _white from '../colors.css';
+@value gridSize, doubleGridSize, maxWidth  from '../globals.css';
+
+.nav {
+    background-color: _blueDark;
+    composes: _container from '../globals.css';
+}
+
+.navContent {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    composes: _content from '../globals.css';
+}
+
+@media screen and (max-width: 600px) {
+    .navContent {
+        justify-content: center;
+    }
+}
+
+
+.item {
+    color: _white;
+    height: calc(gridSize * 6);
+    line-height: calc(gridSize * 6);
+    margin: auto doubleGridSize;
+    opacity: 0.7;
+    padding: 0 gridSize;
+    position: relative;
+    transition: opacity 0.2s ease;
+    composes: bodyFont from "../typography.css";
+}
+
+.item:after {
+    border-bottom: 3px solid _white;
+    opacity: 0;
+}
+
+.active:after {
+    bottom: 0;
+    content: ' ';
+    display: block;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.item:first-child {
+    margin-left: 0;
+}
+
+.item:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
